@@ -1,21 +1,28 @@
 console.log('***** Music Collection *****')
 
-let collection=[];
+let collection = [];
 
 function addTooCollection(title, artist, yearPublished){
-    let music = {
-        title: ['To Pimp A Butterfly', 'Astroworld', 'Die Lit', 'good kid m.A.A.d city', 'My Turn', 'My Beautiful Dark Twisted Fantasy'],
-        artist:['Kendrick Lamar', 'Travis Scott', 'Playboi Carti', 'Lil Baby', 'Kanye West'],
-        yearPublished:[2015, 2018, 2018, 2012, 2020, 2010],
-    }
-    collection.push(music);
+    console.log('In addTooCollection')
+    let music = [
+        {title:'To Pimp A Butterfly', artist: 'Kendrick Lamar', yearPublished: 2015}, 
+        {title: 'Astroworld', artist: 'Travis Scott', yearPublished: 2018}
+    ]
+    collection.push(music)
     return music;
 }
 console.log('testing music object',  addTooCollection());
+
 console.log('Testing collection array', collection);
 
-function showCollection () {
-    console.log('Checking the number of items in collection', collection.length);
+function showCollection(){
+   console.log('In showCollection')
+   for(let i = 0; i < collection.length; i++)
+   for(let i = 0; i < collection.length; i++){
+       console.log(collection[i][i].title, 'by', collection[i][i].artist, 'published in', collection[i][i].yearPublished)
+   }
 }
 
-console.log('Testing Show function', showCollection());
+console.log('In showCollection', showCollection())
+
+
