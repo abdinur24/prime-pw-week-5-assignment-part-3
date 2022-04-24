@@ -24,7 +24,7 @@ function showCollection(){
        console.log(collection[i].title, 'by', collection[i].artist, 'published in', collection[i].yearPublished)
    }
 }
-console.log('In showCollection', showCollection())
+console.log('In showCollection', showCollection());
 
 function findByArtist(artist){
     let results = []
@@ -35,6 +35,6 @@ function findByArtist(artist){
     }
     return results;
 }
-console.log('In findByArtist', findByArtist('Kendrick Lamar'))
-console.log('In findByArtist', findByArtist('Lil Wayne'))
+console.log('In findByArtist', findByArtist('Kendrick Lamar'));
+console.log('In findByArtist', findByArtist('Lil Wayne'));
 
